@@ -1,6 +1,6 @@
 {
   "name": "node-slicknav",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node version jQuery SlickNav plugin ",
   "main": "dist/js/slicknav.js",
   "scripts": {
@@ -10,6 +10,7 @@
     "node",
     "npm"
   ],
+  "publishConfig": { "registry": "https://registry.npmjs.com/" },
   "sass": "scss/slicknav.scss",
   "author": "Ravi Kiran Lingam",
   "license": "MIT",

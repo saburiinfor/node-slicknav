@@ -6,8 +6,9 @@
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('jquery')) :
     typeof define === 'function' && define.amd ? define(['jquery'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.Util = factory(global.jQuery));
-  }(this, (function ($) { 'use strict';
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.Plugin = factory(global.jQuery));
+  }(this, (function ($) { 
+    'use strict';
   
     $ = $ && Object.prototype.hasOwnProperty.call($, 'default') ? $['default'] : $;
 
@@ -611,8 +612,10 @@
         }
       };
   
-    Plugin.jQueryDetection();
+    let slickNav = new Plugin();
 
-    return Plugin;
+    slickNav.jQueryDetection();
+
+    return slickNav;
 
 })));
