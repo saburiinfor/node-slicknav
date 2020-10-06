@@ -74,7 +74,7 @@ class Plugin {
     this.init();
   }
   
-  init = function () {
+  init () {
     var $this = this,
       menu = $(this.element),
       settings = this.settings,
@@ -358,7 +358,7 @@ class Plugin {
   };
   
   //toggle menu
-  _menuToggle = function (el) {
+  _menuToggle (el) {
     var $this = this;
     var btn = $this.btn;
     var mobileNav = $this.mobileNav;
@@ -375,7 +375,7 @@ class Plugin {
   };
   
   // toggle clicked items
-  _itemClick = function (el) {
+  _itemClick (el) {
     var $this = this;
     var settings = $this.settings;
     var data = el.data('menu');
@@ -407,7 +407,7 @@ class Plugin {
   };
   
   // toggle actual visibility and accessibility tags
-  _visibilityToggle = function (el, parent, animate, trigger, init) {
+  _visibilityToggle (el, parent, animate, trigger, init) {
     var $this = this;
     var settings = $this.settings;
     var items = $this._getActionItems(el);
@@ -491,7 +491,7 @@ class Plugin {
   };
   
   // set attributes of element and children based on visibility
-  _setVisAttr = function (el, hidden) {
+  _setVisAttr(el, hidden) {
     var $this = this;
     
     // select all parents that aren't hidden
@@ -518,7 +518,7 @@ class Plugin {
   };
   
   // get all 1st level items that are clickable
-  _getActionItems = function (el) {
+  _getActionItems(el) {
     var data = el.data("menu");
     if (!data) {
       data = {};
@@ -530,7 +530,7 @@ class Plugin {
     return data.links;
   };
   
-  _outlines = function (state) {
+  _outlines(state) {
     if (!state) {
       $('.' + prefix + '_item, .' + prefix + '_btn').css('outline', 'none');
     } else {
@@ -538,19 +538,19 @@ class Plugin {
     }
   };
   
-  toggle = function () {
+  toggle() {
     var $this = this;
     $this._menuToggle();
   };
   
-  open = function () {
+  open () {
     var $this = this;
     if ($this.btn.hasClass(prefix + '_collapsed')) {
       $this._menuToggle();
     }
   };
   
-  close = function () {
+  close() {
     var $this = this;
     if ($this.btn.hasClass(prefix + '_open')) {
       $this._menuToggle();

@@ -1,11 +1,11 @@
 {
    "name": "@saburiinfor/node-slicknav",
-   "version": "1.0.3",
+   "version": "1.0.4",
    "description": "Node version jQuery SlickNav plugin ",
    "main": "dist/js/slicknav.js",
    "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
-      "build": "node-sass src/sass/slicknav.scss dist/css/slicknav.css && cp -r src/js/*.js dist/js/"
+      "build": "webpack --mode production --progress --colors && node-sass src/sass/slicknav.scss dist/css/slicknav.css && cp -r src/js/*.js dist/js/"
    },
    "keywords": [
       "node",
@@ -22,7 +22,9 @@
    "license": "MIT",
    "dependencies": {
       "jquery": "^3.5.1",
-      "node-sass": "^4.14.1"
+      "node-sass": "^4.14.1",
+      "webpack": "^4.44.2",
+      "webpack-cli": "^3.3.12"
    },
    "devDependencies": {
       "@babel/plugin-proposal-class-properties": "^7.10.4"
