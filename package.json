@@ -1,5 +1,5 @@
 {
-   "name": "node-slicknav",
+   "name": "@saburiinfor/node-slicknav",
    "version": "1.0.2",
    "description": "Node version jQuery SlickNav plugin ",
    "main": "dist/js/slicknav.js",
@@ -16,13 +16,15 @@
       "url": "https://github.com/saburiinfor/node-slicknav.git"
    },
    "publishConfig": {
-      "registry": "https://registry.npmjs.com/"
+      "registry": "https://npm.pkg.github.com/"
    },
-   "sass": "scss/slicknav.scss",
    "author": "Ravi Kiran Lingam",
    "license": "MIT",
    "dependencies": {
       "jquery": "^3.5.1",
       "node-sass": "^4.14.1"
+   },
+   "devDependencies": {
+      "@babel/plugin-proposal-class-properties": "^7.10.4"
    }
 }
