@@ -1,6 +1,6 @@
 {
    "name": "@saburiinfor/node-slicknav",
-   "version": "1.0.5",
+   "version": "1.0.6",
    "description": "Node version jQuery SlickNav plugin ",
    "main": "dist/js/slicknav.js",
    "scripts": {
@@ -23,7 +23,7 @@
    "dependencies": {
       "jquery": "^3.5.1",
       "node-sass": "^4.14.1",
-      "webpack": "^4.42.0",
+      "webpack": "^4.44.2",
       "webpack-cli": "^3.3.12"
    },
    "devDependencies": {
