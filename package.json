@@ -1,6 +1,6 @@
 {
    "name": "@saburiinfor/node-slicknav",
-   "version": "1.0.9",
+   "version": "1.1.0",
    "description": "Node version jQuery SlickNav plugin ",
    "main": "dist/js/slicknav.js",
    "scripts": {
